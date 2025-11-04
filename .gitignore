@@ -1,0 +1,8 @@
+# Python environement
+.venv
+__pycache__
+
+# Logs
+logs
+!logs/.gitkeep
+
