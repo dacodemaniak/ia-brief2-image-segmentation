@@ -13,12 +13,19 @@ Image segmentation takes a picture as input and cut picture into segments with a
 ## Used libs
 
 - streamlit
+- pillow
 - transformer
 - torch
 - pytest
 - loguru
 
+## Usage
+
+From a terminal (Linux / MacOS) just run :
+
+`./launch.sh`
+
 ## CHANGELOG
 
-[v1.0.0]
+- [v1.0.0]
 
