@@ -28,4 +28,9 @@ From a terminal (Linux / MacOS) just run :
 ## CHANGELOG
 
 - [v1.0.0]
+    - Segment detection from an image
+    - Display both normalized and colorized segments
 
+- [v1.0.1]
+    - Using nlpconnect/vit-gpt2-image-captioning to get a text description
+    - Update IHM to illustrate each segment
