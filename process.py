@@ -84,7 +84,7 @@ def extract_segment_images(original_image, segments):
             })
     return segment_images
     
-def generate_segment_description(segment_images, max_length=30):
+def generate_segment_description(segment_images, max_length=50) :
     '''
         Generate descriptions for each segment
     '''
@@ -97,8 +97,7 @@ def generate_segment_description(segment_images, max_length=30):
             # Segment description builder
             results = captioner(
                 segment_data['image'],
-                max_new_tokens = max_length,
-                num_beams = 3 # To improve description quality
+                max_new_tokens = max_length
             )
 
             description = results[0]['generated_text']
@@ -110,7 +109,7 @@ def generate_segment_description(segment_images, max_length=30):
                 'image': segment_data['image']
             })
         except Exception as e:
-            logger.error(f"Error generating description for segment {segment_data['segment_id']}")
+            logger.error(f"Error generating description for segment {segment_data['segment_id']} : {e}")
             descriptions.append({
                 'segment_id': segment_data['segment_id'],
                 'description': 'No description available for this segment',
