@@ -34,3 +34,4 @@ From a terminal (Linux / MacOS) just run :
 - [v1.0.1]
     - Using nlpconnect/vit-gpt2-image-captioning to get a text description
     - Update IHM to illustrate each segment
+    - Simple TU for segmentation
